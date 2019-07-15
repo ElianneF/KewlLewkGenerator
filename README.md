@@ -1,2 +1,1 @@
-# KewlLewkGenerator
-Randomized Outfit Generator 
+

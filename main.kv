@@ -1,0 +1,29 @@
+#:include StartScreen.kv
+#:include RainScreen.kv
+#:include TempScreen.kv
+#:include StyleScreen.kv
+#:include ColourScreen.kv
+#:include FinalScreen.kv
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+        StartScreen:
+            name: "start_screen"
+            id: start_screen
+        RainScreen:
+            name: "rain_screen"
+            id: rain_screen
+        TempScreen:
+            name: "temp_screen"
+            id: temp_screen
+        StyleScreen:
+            name: "style_screen"
+            id: style_screen
+        ColourScreen:
+            name: "colour_screen"
+            id: colour_screen
+        FinalScreen:
+            name: "final_screen"
+            id: final_screen

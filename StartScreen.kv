@@ -1,0 +1,29 @@
+#: import utils kivy.utils
+
+<StartScreen>:
+
+    GridLayout:
+        size: root.size
+        cols:1
+        spacing:10
+        Label:
+            bold: True
+            text: "Ready to lewk kewl 2day?"
+            font_size: 55
+
+        GridLayout:
+
+            cols:4
+            Image:
+                source: "cher.png"
+                size:
+
+            ImageButton:
+                source:
+                    "flaticon-yes.png"
+                on_press:
+                    app.change_screen("rain_screen")
+
+
+
+

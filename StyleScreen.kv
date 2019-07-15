@@ -1,0 +1,53 @@
+#: import utils kivy.utils
+#: import CheckBox kivy.uix.checkbox
+
+<StyleScreen>:
+
+    GridLayout:
+        size: root.size
+        cols:1
+        spacing:10
+        Label:
+            bold: True
+            text: "What's today's mood?"
+            font_size: 55
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint_x: .60
+
+            Label:
+                text: "cool"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(1)
+                on_release:
+                    app.change_screen("colour_screen")
+
+            Label:
+                text: "cosy"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(2)
+                on_release:
+                    app.change_screen("colour_screen")
+
+            Label:
+                text: "fancy"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(3)
+                on_release:
+                    app.change_screen("colour_screen")
+
+            Label:
+                text: "sexy"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(4)
+                on_release:
+                    app.change_screen("colour_screen")

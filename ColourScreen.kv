@@ -1,0 +1,71 @@
+#: import utils kivy.utils
+#: import CheckBox kivy.uix.checkbox
+
+<ColourScreen>:
+
+    GridLayout:
+        size: root.size
+        cols:1
+        spacing:10
+        Label:
+            bold: True
+            text: "Choose a colour you want to wear!"
+            font_size: 55
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint_x: .60
+
+            Label:
+                text: "black"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(1)
+                on_release:
+                    app.change_screen("final_screen")
+
+            Label:
+                text: "white"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(2)
+                on_release:
+                    app.change_screen("final_screen")
+
+            Label:
+                text: "red"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(3)
+                on_release:
+                    app.change_screen("final_screen")
+
+            Label:
+                text: "blue"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(4)
+                on_release:
+                    app.change_screen("final_screen")
+
+            Label:
+                text: "green"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(5)
+                on_release:
+                    app.change_screen("final_screen")
+
+            Label:
+                text: "yellow"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_style = int(6)
+                on_release:
+                    app.change_screen("final_screen")

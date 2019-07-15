@@ -1,0 +1,39 @@
+#: import utils kivy.utils
+
+<RainScreen>:
+
+    GridLayout:
+        size: root.size
+        cols:1
+        rows:4
+        spacing:10
+        Label:
+            bold: True
+            text: "Does it rain?"
+            font_size: 55
+
+        GridLayout:
+            cols:2
+            rows:2
+            spacing:15
+
+            ImageButton:
+                source:
+                    'rain.png'
+               #on_press:
+                    #choice_rain = int(input("1"))
+                on_release:
+                    app.change_screen("temp_screen")
+
+
+            ImageButton:
+                source:
+                    'sun.png'
+                #on_press:
+                    #choice_rain = int(input("2"))
+                on_release:
+                    app.change_screen("temp_screen")
+
+
+
+

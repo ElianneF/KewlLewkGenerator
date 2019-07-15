@@ -1,0 +1,54 @@
+#: import utils kivy.utils
+#: import CheckBox kivy.uix.checkbox
+
+<TempScreen>:
+
+    GridLayout:
+        size: root.size
+        cols:1
+        spacing:10
+        Label:
+            bold: True
+            text: "What's the temperature?"
+            font_size: 55
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint_x: .60
+
+            Label:
+                text: "<5"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_temperature = int(1)
+                on_release:
+                    app.change_screen("style_screen")
+
+            Label:
+                text: "5-15"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_temperature = int(2)
+                on_release:
+                    app.change_screen("style_screen")
+
+            Label:
+                text: "16-25"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_temperature = int(3)
+                on_release:
+                    app.change_screen("style_screen")
+
+            Label:
+                text: ">25"
+                size_hint_x: 1
+            CheckBox:
+                on_active:
+                    choice_temperature = int(4)
+                on_release:
+                    app.change_screen("style_screen")
+
